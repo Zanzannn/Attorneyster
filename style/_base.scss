@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -13,10 +16,6 @@
   padding: 0 15px;
 }
 
-@media screen and (max-width: 
-  
-}
-
 .container {
   width: 100%;
   max-width: 1440px;
@@ -24,22 +23,11 @@
 
 a {
   text-decoration: none;
-  color: black;
+  color: $text-white;
  }
 
 li {
   list-style: none;
-}
-
-
-@font-face {
-  font-family: DMSans-normal;
-  src: url(./fonts/DMSans-Regular.ttf);
-}
-
-@font-face {
-  font-family: Rosario;
-  src: url(./fonts/Rosario-Bold.ttf);
 }
 
 body {
@@ -47,7 +35,7 @@ body {
   }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Cormorant Garamond', serif;
-  font-weight: 700;
-  color: $dark-text;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  color: $text-white;
 }
