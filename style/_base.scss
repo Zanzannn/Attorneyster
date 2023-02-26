@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+@media screen and (max-width: 
+  
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+ }
+
+li {
+  list-style: none;
+}
+
+
+@font-face {
+  font-family: DMSans-normal;
+  src: url(./fonts/DMSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: Rosario;
+  src: url(./fonts/Rosario-Bold.ttf);
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  color: $dark-text;
+}
