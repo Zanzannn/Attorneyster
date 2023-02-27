@@ -5,15 +5,16 @@
 }
 
 .wrapper {
-  width: 1440px;
+  max-width: 1440px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 15px;
 }
 
 .container {
-  width: 1240px;
+  width: 100%;
 }
 
 a {
@@ -25,21 +26,15 @@ li {
   list-style: none;
 }
 
-@font-face {
-  font-family: DMSans-normal;
-  src: url(./fonts/DMSans-Regular.ttf);
-}
-@font-face {
-  font-family: Rosario;
-  src: url(./fonts/Rosario-Bold.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&display=swap');
+
 body {
-  font-family: "DMSans-normal";
-  font-weight: 400;
+  font-family: 'Outfit', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Cormorant", sans-serif;
-  font-weight: 700;
-  color: #222222;
-}/*# sourceMappingURL=style.css.map */
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 400;
+  color: $text-white;
+}
