@@ -29,10 +29,12 @@
     &-midth {
         padding: 33px 40px 33px 40px;
         display: flex;
+        justify-content: space-between;
         width: 100%;
 
         &-menu{
             justify-content: flex-start;
+            width: 50%;
 
             ol {
                 display: flex;
@@ -51,9 +53,16 @@
         }
 
         &-buttons {
+            width: 50%;
             justify-content: flex-end;
+            display: flex;
+            gap: 50px;
 
-            &-icons {
+
+            &-phone_icon {
+                display: flex;
+                justify-content: space-between;
+
                 & p:first-child {
                     color: $text-gold;
                 }
