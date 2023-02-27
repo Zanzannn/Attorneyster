@@ -65,18 +65,32 @@ h1, h2, h3, h4, h5, h6 {
   padding: 24px 71px 24px 71px;
 }
 .header-logo-right a:hover {
-  opacity: 0.7;
+  opacity: 0.9;
   transition: all 0.3s ease-in-out;
 }
-.header-menu ol {
+.header-midth {
+  padding: 33px 40px 33px 40px;
+  display: flex;
+  width: 100%;
+}
+.header-midth-menu {
+  justify-content: flex-start;
+}
+.header-midth-menu ol {
   display: flex;
   gap: 46px;
   align-items: center;
 }
-.header-menu ol ol:first-child {
+.header-midth-menu ol a:first-child {
   color: #D1B06B;
 }
-.header-menu ol a:hover {
+.header-midth-menu ol a:hover {
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
+}
+.header-midth-buttons {
+  justify-content: flex-end;
+}
+.header-midth-buttons-icons p:first-child {
+  color: #D1B06B;
 }/*# sourceMappingURL=style.css.map */

@@ -20,24 +20,45 @@
             padding: 24px 71px 24px 71px;
             
             & a:hover {
-                opacity: .7;
+                opacity: .9;
                 transition: all .3s ease-in-out;
             }
         }
     }
 
-    &-menu ol {
+    &-midth {
+        padding: 33px 40px 33px 40px;
         display: flex;
-        gap: 46px;
-        align-items: center;
-            
-        & ol:first-child {
-            color: $text-gold;
+        width: 100%;
+
+        &-menu{
+            justify-content: flex-start;
+
+            ol {
+                display: flex;
+                gap: 46px;
+                align-items: center;
+                
+                & a:first-child {
+                    color: $text-gold;
+                }
+
+                & a:hover {
+                    opacity: .7;
+                    transition: all .3s ease-in-out;
+                }
+            } 
         }
 
-        & a:hover {
-            opacity: .7;
-            transition: all .3s ease-in-out;
+        &-buttons {
+            justify-content: flex-end;
+
+            &-icons {
+                & p:first-child {
+                    color: $text-gold;
+                }
+
+            }
         }
-    }   
+    }  
 }
