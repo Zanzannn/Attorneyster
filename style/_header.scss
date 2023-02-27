@@ -18,6 +18,12 @@
             border: 1px solid rgba(255, 255, 255, 0.1);
             display: flex;
             padding: 24px 71px 24px 71px;
+
+            
+        & a:hover {
+            opacity: .7;
+            transition: all .3s ease-in-out;
+        }
         }
     }
 
@@ -26,15 +32,13 @@
         gap: 46px;
         align-items: center;
             
-            ol:first-child {
+            & ol:first-child {
                 color: $text-gold;
-
         }
 
         & a:hover {
             opacity: .7;
             transition: all .3s ease-in-out;
-            border-bottom: 1px solid;
         }
     }   
 }
