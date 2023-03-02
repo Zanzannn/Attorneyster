@@ -17,18 +17,13 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 100%;
 }
 
-@media (max-width: 960px) {
-  .container {
-    max-width: 955px;
-  }
-}
 
-@media (max-width: 375px) {
+@media only screen and (min-width: 300px) and (max-width: 900px){
   .container {
-    max-width: 360px;
+    max-width: auto;
   }
 }
 
@@ -38,11 +33,25 @@ a {
   color: $text-white;
  }
 
- @media (max-width: 960px) {
+ @media (max-width: 1192px) {
   a { 
-    @include fontz (18px, 26px, 0.4px, Outfit, 400);
+    @include fontz (1.05em, 26px, 0.4px, Outfit, 400);
   }
 }
+
+@media (max-width: 887px) {
+  a { 
+    @include fontz (1.0em, 24px, 0.4px, Outfit, 400);
+  }
+}
+
+@media (max-width: 865px) {
+  a { 
+    @include fontz (.95em, 22px, 0.4px, Outfit, 400);
+  }
+}
+
+
 
 ol {
   list-style: none;
