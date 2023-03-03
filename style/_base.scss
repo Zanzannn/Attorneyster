@@ -35,13 +35,13 @@ a {
 
  @media (max-width: 1192px) {
   a { 
-    @include fontz (18px, 26px, 0.4px, Outfit, 400);
+   
   }
 }
 
 @media (max-width: 887px) {
   a { 
-    @include fontz (16px, 24px, 0.4px, Outfit, 400);
+    
   }
 }
 
