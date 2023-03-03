@@ -101,18 +101,22 @@
             gap: 50px;
             justify-content: space-between;
 
-            @media (max-width: 1192px) {
+            @media (max-width: 1250px) and (min-width: 1192px) {
                 & { 
-                    gap: 10px;  
+                    gap: 30px;  
 
                 }
             }
 
             &-link {
                 display: flex;
-                width: 100%;
-                flex-wrap: wrap;
+                max-width: 50%;
+                flex-direction: row;
                 justify-content: space-between;
+
+                &-icon {
+                    max-width: 100%;
+                }
 
                 @media (max-width: 1192px) {
                    
@@ -136,13 +140,22 @@
 
                 &-text {
                     padding-left: 12px;
+                    max-height: 62px;
                     display: flex;
+                    flex-direction: column;
 
                     &-font18 {
                         @include fontz (18px, 28.8px, 0.4px, Outfit, 400);
                         color: $text-gold;  
                         display: flex;
                         align-items: start;
+
+                        @media (max-width: 1250px) and (min-width: 1192px) {
+                            & { 
+                                @include fontz (16px, 22px, 0.4px, Outfit, 400);  
+            
+                            }
+                        }
                     }
 
                     @media (max-width: 1192px) {
@@ -156,6 +169,13 @@
                         color: $text-white;
                         display: flex;
                         align-items: end;
+
+                        @media (max-width: 1250px) and (min-width: 1192px) {
+                            & { 
+                                @include fontz (18px, 22.4px, 0.4px, Outfit, 400);  
+            
+                            }
+                        }
                     }
                 }    
             }
