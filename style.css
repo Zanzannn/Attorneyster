@@ -16,7 +16,7 @@
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 100%;
 }
 
 @media only screen and (min-width: 300px) and (max-width: 900px) {
@@ -26,41 +26,9 @@
 }
 a {
   text-decoration: none;
-  font-size: 22px;
-  line-height: 35px;
-  letter-spacing: 0.4px;
-  font-family: Outfit;
-  font-weight: 400;
   color: #FFFFFF;
 }
 
-@media (max-width: 1192px) {
-  a {
-    font-size: 1.05em;
-    line-height: 26px;
-    letter-spacing: 0.4px;
-    font-family: Outfit;
-    font-weight: 400;
-  }
-}
-@media (max-width: 887px) {
-  a {
-    font-size: 1em;
-    line-height: 24px;
-    letter-spacing: 0.4px;
-    font-family: Outfit;
-    font-weight: 400;
-  }
-}
-@media (max-width: 865px) {
-  a {
-    font-size: 0.95em;
-    line-height: 22px;
-    letter-spacing: 0.4px;
-    font-family: Outfit;
-    font-weight: 400;
-  }
-}
 ol {
   list-style: none;
 }
@@ -87,19 +55,25 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 10px;
 }
 @media (max-width: 1192px) {
   .header-logo {
     padding: 20px;
   }
   .header-logo img {
-    width: 80%;
+    width: 100%;
   }
 }
 @media (max-width: 887px) {
   .header-logo {
     padding: 10px;
   }
+}
+.header-logo-left {
+  max-width: 45%;
+  display: flex;
+  align-items: center;
 }
 .header-logo-right {
   width: 350px;
@@ -117,6 +91,13 @@ h1, h2, h3, h4, h5, h6 {
     height: 75px;
     padding: 14px 21px 14px 21px;
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 630px) and (min-width: 320px) {
+  .header-logo-right {
+    width: 200px;
+    height: 60px;
+    padding: 5px 11px 5px 11px;
   }
 }
 .header-logo-right:hover {
