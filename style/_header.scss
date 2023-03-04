@@ -70,34 +70,30 @@
         }
     }
 
+    img {
+        width: 100%;
+        text-align: center;
+    }
+
     &-midth {
         padding: 33px 40px 30px 40px;
         margin-bottom: 0;
         display: flex;
         justify-content: space-between;
         width: 100%;
-
+       
         @media (max-width: 887px) {
             & { 
                 padding: 18px 25px 10px 25px;
             }
           }
 
-          @media(max-width: 650px){
-            .menu-burger__header {
-                position: relative; /* задаем относительное позиционирование */
-                width: 40px; /* определяем размеры блока */
-                height: 35px;
-                display: block;
-                margin-left: 10px;
-            }
-        }
-
+        
         &-menu{
             justify-content: flex-start;
             width: 50%;
             
-            ol {
+            ol {                        
                 display: flex;
                 gap: 46px;
                 align-items: center;
@@ -111,6 +107,12 @@
                     opacity: .7;
                     transition: all .3s ease-in-out;
                 }
+
+                @media (max-width: 922px) {
+                    & { 
+                        gap: 20px;
+                    }
+                  }
 
                 @media (max-width: 865px) {
                     & { 
@@ -126,17 +128,7 @@
 
                 }
 
-                @media (max-width: 650px) {
-                    & { 
-                        &-burger {
-                            position: relative; /* задаем относительное позиционирование */
-                            width: 40px; /* определяем размеры блока */
-                            height: 35px;
-                            display: block;
-                            margin-left: 10px;
-                        }
-                    }
-            }
+
                 
         }
 
