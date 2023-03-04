@@ -52,19 +52,10 @@ a {
     font-weight: 400;
   }
 }
-@media (max-width: 865px) {
+@media (max-width: 780px) {
   a {
     font-size: 14px;
-    line-height: 22px;
-    letter-spacing: 0.4px;
-    font-family: Outfit;
-    font-weight: 400;
-  }
-}
-@media (max-width: 630px) and (min-width: 320px) {
-  a {
-    font-size: 10px;
-    line-height: 18px;
+    line-height: 20px;
     letter-spacing: 0.4px;
     font-family: Outfit;
     font-weight: 400;
@@ -124,21 +115,24 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
-  padding: 24px 71px 24px 71px;
+  justify-content: center;
 }
 @media (max-width: 1192px) {
   .header-logo-right {
-    width: 200px;
+    width: 250px;
     height: 75px;
-    padding: 14px 21px 14px 21px;
-    font-size: 16px;
   }
 }
-@media screen and (max-width: 630px) and (min-width: 320px) {
+@media (max-width: 650px) {
   .header-logo-right {
-    width: 200px;
+    width: 180px;
     height: 60px;
-    padding: 5px 11px 5px 11px;
+  }
+}
+@media (max-width: 450px) {
+  .header-logo-right {
+    width: 140px;
+    height: 60px;
   }
 }
 .header-logo-right:hover {
@@ -156,6 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  gap: 10px;
 }
 @media (max-width: 887px) {
   .header-midth {
@@ -164,10 +159,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-midth-menu {
   justify-content: flex-start;
-  width: 50%;
 }
 .header-midth-menu ol {
   display: flex;
+  flex-wrap: nowrap;
   gap: 46px;
   align-items: center;
   justify-content: space-between;
@@ -179,19 +174,19 @@ h1, h2, h3, h4, h5, h6 {
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width: 922px) {
+@media (max-width: 1040px) {
   .header-midth-menu ol {
-    gap: 20px;
+    gap: 30px;
   }
 }
 @media (max-width: 865px) {
   .header-midth-menu ol {
-    gap: 10px;
+    gap: 20px;
   }
 }
-@media (max-width: 650px) {
+@media (max-width: 767px) {
   .header-midth-menu ol {
-    display: none;
+    gap: 15px;
   }
 }
 .header-midth-buttons {
@@ -200,9 +195,24 @@ h1, h2, h3, h4, h5, h6 {
   gap: 50px;
   justify-content: space-between;
 }
-@media (max-width: 1250px) and (min-width: 1192px) {
+@media (max-width: 1070px) {
   .header-midth-buttons {
     gap: 30px;
+  }
+}
+@media (max-width: 930px) and (min-width: 768px) {
+  .header-midth-buttons {
+    gap: 25px;
+  }
+}
+@media (max-width: 767px) {
+  .header-midth-buttons {
+    gap: 40px;
+  }
+}
+@media (max-width: 510px) {
+  .header-midth-buttons {
+    display: none;
   }
 }
 .header-midth-buttons-link {
@@ -229,6 +239,12 @@ h1, h2, h3, h4, h5, h6 {
   max-height: 62px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .header-midth-buttons-link-text {
+    display: none;
+  }
 }
 .header-midth-buttons-link-text-font18 {
   font-size: 18px;
@@ -249,9 +265,22 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
   }
 }
-@media (max-width: 1192px) {
-  .header-midth-buttons-link-text {
-    display: none;
+@media (max-width: 1191px) {
+  .header-midth-buttons-link-text-font18 {
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 930px) {
+  .header-midth-buttons-link-text-font18 {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
   }
 }
 .header-midth-buttons-link-text-font22 {
@@ -268,6 +297,24 @@ h1, h2, h3, h4, h5, h6 {
   .header-midth-buttons-link-text-font22 {
     font-size: 18px;
     line-height: 22.4px;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 1191px) {
+  .header-midth-buttons-link-text-font22 {
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 930px) {
+  .header-midth-buttons-link-text-font22 {
+    font-size: 14px;
+    line-height: 18px;
     letter-spacing: 0.4px;
     font-family: Outfit;
     font-weight: 400;
