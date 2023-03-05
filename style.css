@@ -322,4 +322,13 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Outfit;
     font-weight: 400;
   }
+}
+.header-parker {
+  width: 100%;
+  display: flex;
+}
+.header-parker-text {
+  width: 50%;
+  padding-top: 12.61%;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */

@@ -240,5 +240,18 @@
                 }    
             }
         }
-    }      
+    }
+    
+    &-parker {
+        width: 100%;
+        display: flex;
+
+        &-text {
+            width: 50%;
+            padding-top: 12.61%;
+            display: flex;
+            
+        }
+    }
+    
 }
