@@ -171,21 +171,16 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 .header-midth {
-  padding: 3% 0 1.8% 0; /* 40px / 1440px & 33px / 1023px */
-  margin-bottom: 0;
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  gap: 0.7%; /* 10px / 1440px */
+  padding: 3% 0 1.8% 0; /* 33px / 1023px */
+  display: flex;
 }
 .header-midth-menu {
-  justify-content: flex-start;
-  width: 33.13%; /* 477px / 1440px */
+  display: flex;
+  width: 50%;
 }
 .header-midth-menu ol {
   display: flex;
-  flex-wrap: nowrap;
-  gap: 9.6%; /* 46px / 477px */
   align-items: center;
   justify-content: space-between;
 }
@@ -207,9 +202,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-midth-buttons {
   display: flex;
-  justify-content: flex-end;
-  gap: 3.5%; /* 50px / 1440px */
-  justify-content: space-between;
+  width: 50%;
 }
 @media (max-width: 930px) and (min-width: 768px) {
   .header-midth-buttons {
@@ -228,7 +221,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-midth-buttons-link {
   display: flex;
-  max-width: 50%;
   flex-direction: row;
   justify-content: space-between;
 }
