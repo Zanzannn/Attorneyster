@@ -1,43 +1,43 @@
 .header {
     width: 100%;
     height: 100%;
+    padding: 2.8%  2.8% 1.8% 2.8%;  /* 40px / 1440px */
     background-image: url(img/Header/Room_bc.png);
     background-size: 100%;
 
     &-logo {
         width: 100%;
-        padding: 40px;
+        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 10px;
+        gap: 0.7%; /* 10px / 1440px */
 
-              
-        @media (max-width: 1192px) {
-            & { 
-                padding: 20px;
-            }
-
-            & img {
-               width: 100%; 
-            }
+        img {
+             width: 100%;
         }
 
-        @media (max-width: 887px) {
-            & { 
-                padding: 10px;
-            }
-          }
-
         &-left {
-            max-width: 45%;
+            width: 28.8%; /* 400px / 1440px */
             display: flex;
             align-items: center;
-         } 
+
+            @media (max-width: 600px) {
+                & {
+                    width: 35%;
+                }
+            }
+
+             @media (max-width: 500px) {
+                & {
+                    width: 45%;
+                }
+            }
+        } 
 
         &-right {
-            width: 350px;
-            height: 85px;
+            width: 24.3%; /* 350px / 1440px */
+            height: 8.3%; /* 85px / 1023px */
             color: #FFFFFF 10%;
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -45,24 +45,33 @@
             align-items: center;
             justify-content: center;
             
-            @media (max-width: 1192px) {
+            @media (max-width: 1000px) {
                 & {
-                    width: 250px;
-                    height: 75px;
+                    width: 30%;
+                }
+            }
+
+            @media (max-width: 678px) {
+                & {
+                    width: 33%;
+                }
+            }
+
+             @media (max-width: 650px) {
+                & {
+                    width: 40%;
                 }
             }
 
             @media (max-width: 650px) {
                 & {
-                    width: 180px;
-                    height: 60px;
+                    width: 45%;
                 }
             }
 
-            @media (max-width: 450px) {
+            @media (max-width: 400px) {
                 & {
-                    width: 140px;
-                    height: 60px;
+                    width: 50%;
                 }
             }
             
@@ -80,30 +89,28 @@
     }
 
     &-midth {
-        padding: 33px 40px 30px 40px;
+        padding: 3% 0 1.8% 0; /* 40px / 1440px & 33px / 1023px */
         margin-bottom: 0;
         display: flex;
         justify-content: space-between;
         width: 100%;
-        gap: 10px;
-       
-        @media (max-width: 887px) {
-            & { 
-                padding: 18px 25px 10px 25px;
-            }
-          }
-
+        gap: 0.7%; /* 10px / 1440px */
         
         &-menu{
             justify-content: flex-start;
-            
+            width: 33.13%; /* 477px / 1440px */
             
             ol {                        
                 display: flex;
                 flex-wrap: nowrap;
-                gap: 46px;
+                gap: 9.6%; /* 46px / 477px */
                 align-items: center;
                 justify-content: space-between;
+
+                & a {
+                    display: flex;
+                    flex-wrap: nowrap;
+                }
 
                 & a:first-child {
                     color: $text-gold;
@@ -114,45 +121,23 @@
                     transition: all .3s ease-in-out;
                 }
 
-              
-
-                  @media (max-width: 1040px) {
+                @media (max-width: 1040px) {
                     & { 
-                        gap: 30px;
+                        gap: 7.5%; /* 36px / 477px */
                     }
-                  }
-
-                  @media (max-width: 865px) {
-                    & { 
-                        gap: 20px;
-                    }
-                  }
-
-                @media (max-width: 767px) {
-                    & { 
-                        gap: 15px;
-                    }
-                  }
-                }     
+                }
+            }     
         }
 
         &-buttons {
             display: flex;
             justify-content: flex-end;
-            gap: 50px;
+            gap: 3.5%; /* 50px / 1440px */
             justify-content: space-between;
-
-            
-
-            @media (max-width: 1070px) {
-                & { 
-                    gap: 30px;  
-                }
-            }
 
             @media (max-width: 930px) and (min-width: 768px) {
                 & { 
-                    gap: 25px;  
+                    gap: 1.7%; /* 50px / 1440px */
                 }
             }
 
@@ -162,7 +147,7 @@
                 }
             }
 
-            @media (max-width: 510px) {
+            @media (max-width: 525px) {
                 & { 
                     display: none;  
                 }

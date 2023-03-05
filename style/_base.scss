@@ -29,25 +29,37 @@
 
 a {
   text-decoration: none;
-  @include fontz (22px, 35px, 0.4px, Outfit, 400);
+  @include fontz (1.375em, 35px, 0.4px, Outfit, 400); /* 22px / 16px */
   color: $text-white;
  }
 
  @media (max-width: 1192px) {
   a { 
-   @include fontz (18px, 24px, 0.4px, Outfit, 400);
+   @include fontz (1.125em, 24px, 0.4px, Outfit, 400);
   }
 }
 
 @media (max-width: 887px) {
   a { 
-    @include fontz (16px, 24px, 0.4px, Outfit, 400);
+    @include fontz (100%, 24px, 0.4px, Outfit, 400);
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 786px) {
   a { 
-    @include fontz (14px, 20px, 0.4px, Outfit, 400);
+    @include fontz (0.9em, 20px, 0.4px, Outfit, 400);
+  }
+}
+
+@media (max-width: 342px) {
+  a { 
+    @include fontz (0.7em, 18px, 0.4px, Outfit, 400);
+  }
+}
+
+@media (max-width: 296px) {
+  a { 
+    @include fontz (0.6em, 18px, 0.4px, Outfit, 400);
   }
 }
 
