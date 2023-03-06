@@ -9,21 +9,21 @@
     &-logo {
         width: 100%;
         padding-bottom: 2.06%; /* 28px / 1360px */
-        height: 10%; /* 136px / 1360px */ 
+        height: 12.4%; 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 0.73%; /* 10px / 1360px */
-
-        &-img {
-             width: 100%;
-        }
+        gap: 0.74%; /* 10px / 1360px */
 
         &-left {
-            width: 28.8%; /* 400px / 1440px */
+            width: 29.4%; /* 400px / 1360px */
             height: 100%;
             display: flex;
             align-items: center;
+
+            &-img {
+                width: 100%;
+            }
 
             @media (max-width: 600px) {
                 & {
@@ -39,8 +39,8 @@
         } 
 
         &-right {
-            width: 24.3%; /* 350px / 1440px */
-            height: 100%; 
+            width: 25.7%; /* 350px / 1360px */
+            height: 90%;
             color: #FFFFFF 10%;
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -103,7 +103,7 @@
             display: flex;
                  
             ol { 
-                width: 25%; /* 127px / 510px */                        
+                width: 100%;                         
                 display: flex;
                 align-items: center;
                 gap: 8%;
@@ -127,22 +127,31 @@
         &-buttons {
             display: flex;
             width: 50%;
+            gap: 7.3%; /* 50px / 684px */
 
-            @media (max-width: 930px) and (min-width: 768px) {
+            @media (max-width: 930px) {
                 & { 
-                    gap: 9%; /* 50px / 510px */
+                    gap: 6%; 
                 }
             }
 
-            @media (max-width: 767px) {
+            @media (max-width: 847px) {
                 & { 
-                    gap: 8%; /* 40px / 510px */  
+                    gap: 3%;  
                 }
             }
 
+            @media (max-width: 665px) {
+                & { 
+                    gap: 25%;
+                    justify-content: end;  
+                }
+            }
+
+           
             @media (max-width: 525px) {
                 & { 
-                    display: none;  
+                    display: none; 
                 }
             }
 
@@ -151,23 +160,24 @@
                 flex-direction: row;
                 justify-content: space-between;
 
+               
                 &-icon {
-                    max-width: 100%;
-                }
-
-                @media (max-width: 1192px) {
-                   
-                    & img {
-                        size: 95%;
+                
+                    @media (max-width: 1192px) {
+                    
+                        & img {
+                            size: 95%;
+                        }
                     }
-                }
 
-                @media (max-width: 759px) {
+                    @media (max-width: 810px) {
 
-                    & img {
-                        size: 75%;
-                    }
+                        & img {
+                            size: 75%;
+                        }
+                    } 
                 }
+            
 
                 &-text {
                     padding-left: 12px;  
@@ -176,7 +186,7 @@
                     flex-direction: column;
                     justify-content: center;
 
-                    @media (max-width: 767px) {
+                    @media (max-width: 665px) {
                         & { 
                            display: none;  
         
@@ -184,28 +194,28 @@
                     }
 
                     &-font18 {
-                        @include fontz (18px, 28.8px, 0.4px, Outfit, 400);
+                        @include fontz (1.125em, 28.8px, 0.4px, Outfit, 400);
                         color: $text-gold;  
                         display: flex;
                         align-items: start;
 
                         @media (max-width: 1250px) and (min-width: 1192px) {
                             & { 
-                                @include fontz (16px, 22px, 0.4px, Outfit, 400);  
+                                @include fontz (100%, 22px, 0.4px, Outfit, 400);  
             
                             }
                         }
 
                         @media (max-width: 1191px) {
                             & { 
-                                @include fontz (14px, 18px, 0.4px, Outfit, 400);  
+                                @include fontz (0.9em, 18px, 0.4px, Outfit, 400);  
             
                             }
                         }
 
                         @media (max-width: 930px) {
                             & { 
-                                @include fontz (12px, 16px, 0.4px, Outfit, 400);  
+                                @include fontz (0.8em, 16px, 0.4px, Outfit, 400);  
             
                             }
                         }
@@ -213,32 +223,62 @@
 
 
                     &-font22 {
-                        @include fontz (22px, 26.4px, 0.4px, Outfit, 400);
+                        @include fontz (1.375em, 26.4px, 0.4px, Outfit, 400);
                         color: $text-white;
                         display: flex;
                         align-items: end;
 
                         @media (max-width: 1250px) and (min-width: 1192px) {
                             & { 
-                                @include fontz (18px, 22.4px, 0.4px, Outfit, 400);  
+                                @include fontz (1.125em, 22.4px, 0.4px, Outfit, 400);  
             
                             }
                         }
 
                         @media (max-width: 1191px) {
                             & { 
-                                @include fontz (16px, 20px, 0.4px, Outfit, 400);  
+                                @include fontz (100%, 20px, 0.4px, Outfit, 400);  
             
                             }
                         }
 
                         @media (max-width: 930px) {
                             & { 
-                                @include fontz (14px, 18px, 0.4px, Outfit, 400);  
+                                @include fontz (0.9em, 18px, 0.4px, Outfit, 400);  
+            
+                            }
+                        }
+
+                        @media (max-width: 823px) {
+                            & { 
+                                @include fontz (0.8em, 18px, 0.4px, Outfit, 400);  
+            
+                            }
+                        }
+
+                        @media (max-width: 787px) {
+                            & { 
+                                @include fontz (0.8em, 18px, 0.4px, Outfit, 400);  
+            
+                            }
+                        }
+
+                        @media (max-width: 769px) {
+                            & { 
+                                @include fontz (0.7em, 18px, 0.4px, Outfit, 400);  
+            
+                            }
+                        }
+
+                        @media (max-width: 718px) {
+                            & { 
+                                @include fontz (0.6em, 18px, 0.4px, Outfit, 400);  
             
                             }
                         }
                     }
+
+
                 }    
             }
         }
