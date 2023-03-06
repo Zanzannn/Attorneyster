@@ -395,6 +395,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-parker-text-title {
   padding-top: 0.57em;
+  font-size: 65px;
+  line-height: 78px;
 }
 .header-parker-text-paragraph {
   padding-top: 0.72em;
