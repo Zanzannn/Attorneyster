@@ -386,7 +386,28 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-parker-text {
   width: 50%;
-  padding-top: 12.61%;
+  margin-top: 8em;
   display: flex;
   flex-direction: column;
+}
+.header-parker-text-img {
+  max-width: 100%;
+}
+.header-parker-text-title {
+  padding-top: 0.57em;
+}
+.header-parker-text-paragraph {
+  padding-top: 0.72em;
+  font-size: 1.375em;
+  line-height: 28.8px;
+  letter-spacing: 0.4px;
+  font-family: Outfit;
+  font-weight: 400;
+  color: #D1B06B;
+}
+.header-parker-photo {
+  width: 50%;
+}
+.header-parker-photo img {
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */

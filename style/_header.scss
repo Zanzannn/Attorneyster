@@ -315,10 +315,33 @@
 
         &-text {
             width: 50%;
-            padding-top: 12.61%;
+            margin-top: 8em;
             display: flex;
             flex-direction: column;
-            
+
+            &-img {
+                max-width: 100%;
+            }
+
+            &-title {
+                padding-top: 0.57em;
+                
+            }
+
+            &-paragraph {
+                padding-top: 0.72em;
+                @include fontz (1.375em, 28.8px, 0.4px, Outfit, 400);
+                        color: $text-gold; 
+
+            }
+        }
+        
+        &-photo {
+            width: 50%;
+
+            img {
+                max-width: 100%;
+            }
         }
     }
     
