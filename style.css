@@ -180,11 +180,26 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   display: flex;
 }
+@media (max-width: 560px) {
+  .header-midth-menu {
+    width: 65%;
+  }
+}
+@media (max-width: 430px) {
+  .header-midth-menu {
+    width: 80%;
+  }
+}
 .header-midth-menu ol {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 8%;
+}
+@media (max-width: 603px) {
+  .header-midth-menu ol {
+    gap: 6%;
+  }
 }
 .header-midth-menu ol a {
   display: flex;
@@ -216,6 +231,11 @@ h1, h2, h3, h4, h5, h6 {
   .header-midth-buttons {
     gap: 25%;
     justify-content: end;
+  }
+}
+@media (max-width: 560px) {
+  .header-midth-buttons {
+    width: 35%;
   }
 }
 @media (max-width: 525px) {
