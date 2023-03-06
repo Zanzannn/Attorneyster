@@ -12,18 +12,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 0 15px;
+  padding: 0;
 }
 
 .container {
   max-width: 100%;
 }
 
-@media only screen and (min-width: 300px) and (max-width: 900px) {
-  .container {
-    max-width: auto;
-  }
-}
 a {
   text-decoration: none;
   font-size: 1.375em;
@@ -97,19 +92,21 @@ h1, h2, h3, h4, h5, h6 {
 .header {
   width: 100%;
   height: 100%;
-  padding: 2.8% 2.8% 1.8% 2.8%; /* 40px / 1440px */
+  padding: 2.77% 2.77% 0 2.77%; /* 40px / 1440px */
   background-image: url(img/Header/Room_bc.png);
   background-size: 100%;
+  background-repeat: none;
 }
 .header-logo {
   width: 100%;
-  height: 7.8%;
+  padding-bottom: 2.06%; /* 28px / 1360px */
+  height: 10%; /* 136px / 1360px */
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 0.7%; /* 10px / 1440px */
+  gap: 0.73%; /* 10px / 1360px */
 }
-.header-logo img {
+.header-logo-img {
   width: 100%;
 }
 .header-logo-left {
@@ -331,4 +328,5 @@ h1, h2, h3, h4, h5, h6 {
   width: 50%;
   padding-top: 12.61%;
   display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=style.css.map */

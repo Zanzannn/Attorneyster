@@ -1,19 +1,21 @@
 .header {
     width: 100%;
     height: 100%;
-    padding: 2.8%  2.8% 1.8% 2.8%;  /* 40px / 1440px */
+    padding: 2.77%  2.77% 0 2.77%;  /* 40px / 1440px */
     background-image: url(img/Header/Room_bc.png);
     background-size: 100%;
+    background-repeat: none;
 
     &-logo {
         width: 100%;
-        height: 7.8%;
+        padding-bottom: 2.06%; /* 28px / 1360px */
+        height: 10%; /* 136px / 1360px */ 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 0.7%; /* 10px / 1440px */
+        gap: 0.73%; /* 10px / 1360px */
 
-        img {
+        &-img {
              width: 100%;
         }
 
@@ -250,6 +252,7 @@
             width: 50%;
             padding-top: 12.61%;
             display: flex;
+            flex-direction: column;
             
         }
     }
