@@ -396,6 +396,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1em;
   display: flex;
   flex-direction: column;
+  align-content: space-between;
 }
 @media (max-width: 975px) {
   .header-parker-text {
@@ -405,6 +406,11 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 870px) {
   .header-parker-text {
     width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  .header-parker-text {
+    width: 75%;
   }
 }
 .header-parker-text-img {
@@ -527,6 +533,11 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
+@media (max-width: 400px) {
+  .header-parker-text-paragraph {
+    font-size: 80%;
+  }
+}
 .header-parker-text-button {
   width: 48%;
   height: 3em;
@@ -546,12 +557,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 975px) {
   .header-parker-text-button {
-    width: 32%;
+    width: 38%;
   }
 }
-@media (max-width: 870px) {
+@media (max-width: 600px) {
   .header-parker-text-button {
-    width: 30%;
+    margin-top: 0.6em;
+    margin-bottom: 0.1em;
   }
 }
 .header-parker-photo {
@@ -568,7 +580,11 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 870px) {
   .header-parker-photo {
     width: 30%;
-    padding-top: 2%;
+  }
+}
+@media (max-width: 400px) {
+  .header-parker-photo {
+    width: 25%;
   }
 }
 .header-parker-photo img {
