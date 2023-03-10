@@ -489,6 +489,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 480px) {
   .header-parker-text-title-h6 {
+    width: 115%;
     font-size: 1.2em;
   }
 }
