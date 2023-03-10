@@ -1,14 +1,13 @@
 .header {
     width: 100%;
-    padding: 2.77%  2.77% 0 2.77%;  /* 40px / 1440px */
+    padding: 1em  2.77% 0 2.77%;  /* 40px / 1440px */
     background-image: url(img/Header/Room_bc.png);
     background-size: 100%;
     background-repeat: none;
 
     &-logo {
         width: 100%;
-        padding-bottom: 2.06%; /* 28px / 1360px */
-        height: 12.4%; 
+        padding-bottom: .2em; 
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -39,7 +38,7 @@
 
         &-right {
             width: 25.7%; /* 350px / 1360px */
-            height: 3.87em;
+            
             color: #FFFFFF 10%;
             background: rgba(255, 255, 255, 0.1);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -92,9 +91,9 @@
 
     &-midth {
         width: 100%;
-        max-height: 12.7%;
-        padding: 3% 0 1.8% 0; /* 33px / 1023px */
+        padding: .3em 0 .2em 0; 
         display: flex;
+        align-items: center;
         
         &-menu{
             width: 50%; /* 1023px / 2 */ 
@@ -320,10 +319,11 @@
 
         &-text {
             width: 50%;
-            margin-top: 1em;
+            margin-top: .4em;
             display: flex;
             flex-direction: column;
-            gap: 0.5em;
+            justify-content: space-evenly;
+            gap: .5em;
 
             @media (max-width: 975px) {
                 & { 
@@ -354,9 +354,10 @@
             }
 
             &-title {
+                &-h6 {
                 margin: 0;
                 padding-top: 0.1em;
-                padding-bottom: 0.2em;
+                padding-bottom: 0.18em;
                 font-size: 4.2em;
                 line-height: 1em;
 
@@ -467,45 +468,48 @@
                 color: $text-gold; 
                 text-align: justify;
                 
-                @media (max-width: 1250px) {
-                    & { 
-                        font-size: 90%;  
+                    @media (max-width: 1250px) {
+                        & { 
+                            font-size: 90%;  
+                        }
                     }
+    
+                    @media (max-width: 1140px) {
+                        & { 
+                            font-size: 85%;
+                            width: 90%;  
+                        }
+                    }
+    
+                    @media (max-width: 975px) {
+                        & { 
+                            font-size: 80%; 
+                            width: 95%; 
+                        }
+                    }  
+                    
+                    @media (max-width: 600px) {
+                        & { 
+                            font-size: 85%; 
+                            width: 100%; 
+                        }
+                    } 
+    
+                    @media (max-width: 400px) and (min-width: 342px) {
+                        & { 
+                            font-size: 80%; 
+                        }
+                    } 
+    
                 }
-
-                @media (max-width: 1140px) {
-                    & { 
-                        font-size: 85%;
-                        width: 90%;  
-                    }
-                }
-
-                @media (max-width: 975px) {
-                    & { 
-                        font-size: 80%; 
-                        width: 95%; 
-                    }
-                }  
-                
-                @media (max-width: 600px) {
-                    & { 
-                        font-size: 85%; 
-                        width: 100%; 
-                    }
-                } 
-
-                @media (max-width: 400px) and (min-width: 342px) {
-                    & { 
-                        font-size: 80%; 
-                    }
-                } 
-
             }
+
+           
 
             &-button {
                 width: 48%;
                 height: 3em;
-                margin-top: 1.2em;
+                margin-top: .2em;
                 padding-bottom: 0.05em;
                 color: $text-blue;
                 background: $background-gold;
@@ -528,7 +532,6 @@
    
                 @media (max-width: 600px) {
                     & { 
-                        margin-top: 0.2em; 
                         margin-bottom: 0.4em; 
                     }
                 }
@@ -555,7 +558,7 @@
 
             @media (max-width: 400px) {
                 & { 
-                    width: 25%; 
+                    width: 23%; 
                 }
             }
 
