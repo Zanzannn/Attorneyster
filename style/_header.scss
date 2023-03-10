@@ -347,7 +347,8 @@
             }
 
             &-title {
-                padding-top: 0.4em;
+                margin: 0;
+                padding-top: 0.1em;
                 padding-bottom: 0.2em;
                 font-size: 4.2em;
                 line-height: 1em;
@@ -467,15 +468,24 @@
 
                 @media (max-width: 1140px) {
                     & { 
-                        font-size: 85%;  
+                        font-size: 85%;
+                        width: 90%;  
                     }
                 }
 
                 @media (max-width: 975px) {
                     & { 
-                        font-size: 80%;  
+                        font-size: 80%; 
+                        width: 95%; 
                     }
-                }               
+                }  
+                
+                @media (max-width: 600px) {
+                    & { 
+                        font-size: 85%; 
+                        width: 100%; 
+                    }
+                } 
 
             }
 

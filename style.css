@@ -416,7 +416,8 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 .header-parker-text-title {
-  padding-top: 0.4em;
+  margin: 0;
+  padding-top: 0.1em;
   padding-bottom: 0.2em;
   font-size: 4.2em;
   line-height: 1em;
@@ -511,11 +512,19 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 1140px) {
   .header-parker-text-paragraph {
     font-size: 85%;
+    width: 90%;
   }
 }
 @media (max-width: 975px) {
   .header-parker-text-paragraph {
     font-size: 80%;
+    width: 95%;
+  }
+}
+@media (max-width: 600px) {
+  .header-parker-text-paragraph {
+    font-size: 85%;
+    width: 100%;
   }
 }
 .header-parker-text-button {
