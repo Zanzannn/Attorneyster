@@ -503,6 +503,8 @@
         
         &-photo {
             width: 50%;
+            align-items: center;
+            justify-content: center;
 
             @media (max-width: 975px) {
                 & { 
