@@ -338,6 +338,12 @@
 
             &-img {
                 max-width: 14.5%; /* 95px / 655 px */
+
+                @media (max-width: 870px) {
+                    & { 
+                       display: none;  
+                    }
+                }
             }
 
             &-title {
@@ -451,6 +457,7 @@
                 padding-bottom: 0.05em;
                 @include fontz (1em, 1.4em, 0.4px, Outfit, 400);
                 color: $text-gold; 
+                text-align: justify;
                 
                 @media (max-width: 1250px) {
                     & { 
@@ -468,15 +475,7 @@
                     & { 
                         font-size: 80%;  
                     }
-                }
-
-                @media (max-width: 920px) {
-                    & { 
-                        font-size: 75%;  
-                    }
-                }
-
-                
+                }               
 
             }
 
@@ -496,6 +495,18 @@
                     opacity: .5;
                     cursor: pointer;
                     transition: all .3s ease-in-out;
+                }
+
+                @media (max-width: 975px) {
+                    & { 
+                        width: 32%;  
+                    }
+                }
+    
+                @media (max-width: 870px) {
+                    & { 
+                        width: 30%;  
+                    }
                 }
 
             }
