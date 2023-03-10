@@ -396,7 +396,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 1em;
   display: flex;
   flex-direction: column;
-  align-content: space-between;
+  gap: 0.5em;
 }
 @media (max-width: 975px) {
   .header-parker-text {
@@ -533,7 +533,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 400px) and (min-width: 342px) {
   .header-parker-text-paragraph {
     font-size: 80%;
   }
@@ -557,13 +557,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 @media (max-width: 975px) {
   .header-parker-text-button {
-    width: 38%;
+    width: 42%;
   }
 }
 @media (max-width: 600px) {
   .header-parker-text-button {
-    margin-top: 0.6em;
-    margin-bottom: 0.1em;
+    margin-top: 0.2em;
+    margin-bottom: 0.4em;
   }
 }
 .header-parker-photo {
