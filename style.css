@@ -680,21 +680,27 @@ h1, h2, h3, h4, h5, h6 {
   color: #D7D7D7;
 }
 .welcome-to_peter-card-procent {
+  width: 248px;
+  height: 26px;
+  padding: 50px 33px 50px 33px;
   display: flex;
+  align-content: center;
   font-size: 1.375em;
   line-height: 1.4em;
   letter-spacing: 0.4px;
   font-family: Outfit;
   font-weight: 400;
+  background: #D1B06B;
+  border-radius: 0px;
 }
 .welcome-to_peter-card-procent-35 {
   display: flex;
-  width: 51px;
-  height: 39px;
+  width: 81px;
+  height: 59px;
   background: #161D27;
   border-radius: 5px;
-  font-size: 1.875em;
-  line-height: 1.4em;
+  font-size: 1.5em;
+  line-height: 1.2em;
   letter-spacing: 0.4px;
   font-family: Outfit;
   font-weight: 400;

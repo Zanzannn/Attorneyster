@@ -94,16 +94,22 @@
             }
 
             &-procent {
+                width: 248px;
+                height: 26px;
+                padding: 50px 33px 50px 33px;
                 display: flex;
+                align-content: center;
                 @include fontz (1.375em, 1.4em, 0.4px, Outfit, 400);
+                background: #D1B06B;
+                border-radius: 0px;
 
                 &-35 {
                     display: flex;
-                    width: 51px;
-                    height: 39px;
+                    width: 81px;
+                    height: 59px;
                     background: #161D27;
                     border-radius: 5px;
-                    @include fontz (1.875em, 1.4em, 0.4px, Outfit, 400);
+                    @include fontz (1.5em, 1.2em, 0.4px, Outfit, 400);
                     color: #FFFFFF; 
 
                 }
