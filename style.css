@@ -653,7 +653,7 @@ h1, h2, h3, h4, h5, h6 {
   gap: 3.6%;
 }
 .welcome-to_peter-card-pencil {
-  max-width: 50%;
+  max-width: 93.74%;
   padding-left: 6.13%;
   padding-right: 6.13%;
   padding-top: 1.2em;
@@ -662,17 +662,16 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #3B434E;
   align-items: center;
   justify-content: center;
-  gap: 5%;
+  gap: 3.6%;
 }
 .welcome-to_peter-card-pencil-img {
-  max-width: 22%;
   display: flex;
 }
 .welcome-to_peter-card-pencil-img img {
-  max-width: 100%;
+  max-width: 58px;
+  max-height: 56px;
 }
 .welcome-to_peter-card-pencil-p {
-  max-width: 78%;
   font-size: 1.375em;
   line-height: 1.4em;
   letter-spacing: 0.4px;
@@ -681,11 +680,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #D7D7D7;
 }
 .welcome-to_peter-card-procent {
-  max-width: 50%;
   display: flex;
   font-size: 1.375em;
   line-height: 1.4em;
   letter-spacing: 0.4px;
   font-family: Outfit;
   font-weight: 400;
+}
+.welcome-to_peter-card-procent-35 {
+  display: flex;
+  width: 51px;
+  height: 39px;
+  background: #161D27;
+  border-radius: 5px;
+  font-size: 1.875em;
+  line-height: 1.4em;
+  letter-spacing: 0.4px;
+  font-family: Outfit;
+  font-weight: 400;
+  color: #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

@@ -66,7 +66,7 @@
             gap: 3.6%;
             
             &-pencil {
-                max-width: 50%;
+                max-width: 93.74%;
                 padding-left: 6.13%;
                 padding-right: 6.13%;
                 padding-top: 1.2em;
@@ -75,28 +75,38 @@
                 background-color: #3B434E;
                 align-items: center;
                 justify-content: center;
-                gap: 5%;
+                gap: 3.6%;
 
                 &-img {
-                    max-width: 22%;
+                    
                     display: flex;
 
                     & img {
-                        max-width: 100%;
+                        max-width: 58px;
+                        max-height: 56px;
                     }
                 }
 
                 &-p {
-                    max-width: 78%;
                     @include fontz (1.375em, 1.4em, 0.4px, Outfit, 400);
                     color: #D7D7D7; 
                 }
             }
 
             &-procent {
-                max-width: 50%;
                 display: flex;
                 @include fontz (1.375em, 1.4em, 0.4px, Outfit, 400);
+
+                &-35 {
+                    display: flex;
+                    width: 51px;
+                    height: 39px;
+                    background: #161D27;
+                    border-radius: 5px;
+                    @include fontz (1.875em, 1.4em, 0.4px, Outfit, 400);
+                    color: #FFFFFF; 
+
+                }
 
             }
         }
