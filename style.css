@@ -588,4 +588,87 @@ h1, h2, h3, h4, h5, h6 {
 }
 .header-parker-photo img {
   max-width: 100%;
+}
+
+.welcome {
+  max-width: 100%;
+  padding: 8.75em 2.77% 8.75em 2.77%; /* 40px / 1440px */
+  background-color: #161D27;
+  display: flex;
+}
+.welcome-img {
+  max-width: 34.34%; /* 467px / 1360px */
+  display: flex;
+  flex-direction: column;
+  gap: 1.875em;
+}
+.welcome-to_peter {
+  max-width: 65.66%;
+  padding-left: 4.56%; /* 62px / 1360px */
+  display: flex;
+  flex-direction: column;
+}
+.welcome-to_peter h6 {
+  font-size: 2.8125em;
+  line-height: 1.1em;
+}
+.welcome-to_peter-img {
+  padding-top: 0.6875em;
+  padding-bottom: 2.6875em;
+  max-width: 14.5%; /* 95px / 655 px */
+}
+.welcome-to_peter p {
+  max-width: 99.3%;
+  font-size: 1.25em;
+  line-height: 1.4em;
+  letter-spacing: 0.4px;
+  font-family: Outfit;
+  font-weight: 400;
+  color: #D7D7D7;
+  text-align: justify;
+}
+.welcome-to_peter-parker {
+  padding-top: 2em;
+  padding-bottom: 2.8125em;
+  display: flex;
+  flex-direction: row;
+  gap: 2.4%;
+}
+.welcome-to_peter-parker-img {
+  max-width: 100%;
+  max-height: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.welcome-to_peter-parker-h6 {
+  display: flex;
+  align-items: center;
+  font-size: 2.8125em;
+  line-height: 1.1em;
+}
+.welcome-to_peter-card {
+  max-width: 100%;
+  max-height: 20em;
+  display: flex;
+  flex-direction: row;
+  gap: 3.6%;
+}
+.welcome-to_peter-card-pencil {
+  max-width: 50%;
+  padding-left: 6.13%;
+  padding-right: 6.13%;
+  display: flex;
+  background-color: #3B434E;
+  align-items: center;
+  justify-content: center;
+}
+.welcome-to_peter-card-pencil-img {
+  max-width: 30%;
+}
+.welcome-to_peter-card-pencil-p {
+  max-width: 70%;
+}
+.welcome-to_peter-card-procent {
+  max-width: 50%;
+  display: flex;
 }/*# sourceMappingURL=style.css.map */
