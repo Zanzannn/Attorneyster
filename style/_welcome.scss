@@ -71,6 +71,7 @@
                 padding-right: 6.13%;
                 padding-top: 1.2em;
                 padding-bottom: 1.2em;
+                flex-wrap: nowrap;
                 display: flex;
                 background-color: #3B434E;
                 align-items: center;
@@ -94,11 +95,11 @@
             }
 
             &-procent {
-                width: 248px;
-                height: 26px;
+                width: 219px;
                 padding: 50px 33px 50px 33px;
                 display: flex;
-                align-content: center;
+                flex-wrap: nowrap;
+                justify-content: center;
                 @include fontz (1.375em, 1.4em, 0.4px, Outfit, 400);
                 background: #D1B06B;
                 border-radius: 0px;
@@ -111,6 +112,12 @@
                     border-radius: 5px;
                     @include fontz (1.5em, 1.2em, 0.4px, Outfit, 400);
                     color: #FFFFFF; 
+
+                }
+
+                &-years {
+                    @include fontz (1.375em, 1.4em, 0.4px, Outfit, 400);
+                    color: #D7D7D7;
 
                 }
 

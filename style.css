@@ -658,6 +658,7 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 6.13%;
   padding-top: 1.2em;
   padding-bottom: 1.2em;
+  flex-wrap: nowrap;
   display: flex;
   background-color: #3B434E;
   align-items: center;
@@ -680,11 +681,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #D7D7D7;
 }
 .welcome-to_peter-card-procent {
-  width: 248px;
-  height: 26px;
+  width: 219px;
   padding: 50px 33px 50px 33px;
   display: flex;
-  align-content: center;
+  flex-wrap: nowrap;
+  justify-content: center;
   font-size: 1.375em;
   line-height: 1.4em;
   letter-spacing: 0.4px;
@@ -705,4 +706,12 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Outfit;
   font-weight: 400;
   color: #FFFFFF;
+}
+.welcome-to_peter-card-procent-years {
+  font-size: 1.375em;
+  line-height: 1.4em;
+  letter-spacing: 0.4px;
+  font-family: Outfit;
+  font-weight: 400;
+  color: #D7D7D7;
 }/*# sourceMappingURL=style.css.map */
