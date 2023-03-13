@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .header {
   width: 100%;
-  padding: 1em 2.77% 0 2.77%; /* 40px / 1440px */
+  padding: 1em 2.77% 1em 2.77%; /* 40px / 1440px */
   background-image: url(img/Header/Room_bc.png);
   background-size: 100%;
   background-repeat: none;
@@ -592,9 +592,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .welcome {
   max-width: 100%;
-  padding: 8.75em 2.77% 8.75em 2.77%; /* 40px / 1440px */
+  padding: 5em 2.77% 5em 2.77%; /* 40px / 1440px */
   background-color: #161D27;
   display: flex;
+}
+@media (max-width: 878px) {
+  .welcome {
+    flex-direction: column;
+  }
 }
 .welcome-img {
   max-width: 34.34%; /* 467px / 1360px */
@@ -602,20 +607,55 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: column;
   gap: 1.875em;
 }
+@media (max-width: 878px) {
+  .welcome-img {
+    flex-direction: row;
+    max-width: 96%;
+  }
+  .welcome-img-first {
+    max-width: 50%;
+  }
+  .welcome-img-andre {
+    max-width: 50%;
+  }
+}
 .welcome-to_peter {
   max-width: 65.66%;
   padding-left: 4.56%; /* 62px / 1360px */
   display: flex;
   flex-direction: column;
 }
+@media (max-width: 878px) {
+  .welcome-to_peter {
+    max-width: 100%;
+    padding-left: 0%;
+  }
+}
 .welcome-to_peter h6 {
   font-size: 2.8125em;
   line-height: 1.1em;
+}
+@media (max-width: 600px) {
+  .welcome-to_peter h6 {
+    padding-top: 0.25em;
+    font-size: 2em;
+    line-height: 1.2em;
+  }
 }
 .welcome-to_peter-img {
   padding-top: 0.6875em;
   padding-bottom: 2.6875em;
   max-width: 14.5%; /* 95px / 655 px */
+}
+@media (max-width: 600px) {
+  .welcome-to_peter-img {
+    padding-bottom: 1.6875em;
+  }
+}
+@media (max-width: 375px) {
+  .welcome-to_peter-img {
+    padding-bottom: 0.6875em;
+  }
 }
 .welcome-to_peter-text {
   font-size: 1.25em;
@@ -625,6 +665,24 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   color: #D7D7D7;
   text-align: justify;
+}
+@media (max-width: 600px) {
+  .welcome-to_peter-text {
+    font-size: 1.125em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 375px) {
+  .welcome-to_peter-text {
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
 }
 .welcome-to_peter-parker {
   padding-top: 2em;
@@ -647,71 +705,199 @@ h1, h2, h3, h4, h5, h6 {
 }
 .welcome-to_peter-card {
   max-width: 100%;
-  max-height: 20em;
+  display: flex;
+  gap: 3.4%;
+}
+.welcome-to_peter-card-years {
+  width: 36.2%;
+  height: 7.875em;
+  background: #3B434E;
   display: flex;
   flex-direction: row;
-  gap: 3.6%;
+  gap: 6.7%;
 }
-.welcome-to_peter-card-pencil {
-  max-width: 93.74%;
-  padding-left: 6.13%;
-  padding-right: 6.13%;
-  padding-top: 1.2em;
-  padding-bottom: 1.2em;
-  flex-wrap: nowrap;
+.welcome-to_peter-card-years-pencil {
+  width: 35%;
   display: flex;
-  background-color: #3B434E;
+  justify-content: end;
   align-items: center;
-  justify-content: center;
-  gap: 3.6%;
 }
-.welcome-to_peter-card-pencil-img {
+.welcome-to_peter-card-years-pencil-img {
+  max-width: 95%;
+}
+@media (max-width: 650px) {
+  .welcome-to_peter-card-years-pencil-img {
+    max-width: 70%;
+  }
+}
+.welcome-to_peter-card-years-text {
   display: flex;
-}
-.welcome-to_peter-card-pencil-img img {
-  max-width: 58px;
-  max-height: 56px;
-}
-.welcome-to_peter-card-pencil-p {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
   font-size: 1.375em;
   line-height: 1.4em;
   letter-spacing: 0.4px;
   font-family: Outfit;
   font-weight: 400;
   color: #D7D7D7;
+  align-content: center;
+}
+@media (max-width: 1250px) and (min-width: 877px) {
+  .welcome-to_peter-card-years-text {
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 800px) {
+  .welcome-to_peter-card-years-text {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 656px) {
+  .welcome-to_peter-card-years-text {
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
 }
 .welcome-to_peter-card-procent {
-  width: 219px;
-  padding: 50px 33px 50px 33px;
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: center;
-  font-size: 1.375em;
-  line-height: 1.4em;
-  letter-spacing: 0.4px;
-  font-family: Outfit;
-  font-weight: 400;
+  width: 36.2%;
+  height: 7.875em;
   background: #D1B06B;
-  border-radius: 0px;
-}
-.welcome-to_peter-card-procent-35 {
   display: flex;
-  width: 81px;
-  height: 59px;
+  gap: 6.7%;
+}
+.welcome-to_peter-card-procent-windows {
+  width: 35%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.welcome-to_peter-card-procent-windows-black {
+  width: 68%;
+  height: 47%;
   background: #161D27;
   border-radius: 5px;
-  font-size: 1.5em;
-  line-height: 1.2em;
+  font-size: 1.875em;
+  line-height: 1.6em;
   letter-spacing: 0.4px;
   font-family: Outfit;
   font-weight: 400;
   color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.welcome-to_peter-card-procent-years {
+@media (max-width: 1250px) and (min-width: 877px) {
+  .welcome-to_peter-card-procent-windows-black {
+    font-size: 1.5em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 800px) {
+  .welcome-to_peter-card-procent-windows-black {
+    font-size: 1.7em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 650px) {
+  .welcome-to_peter-card-procent-windows-black {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+.welcome-to_peter-card-procent-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.welcome-to_peter-card-procent-text-years {
   font-size: 1.375em;
-  line-height: 1.4em;
+  line-height: 1.2em;
   letter-spacing: 0.4px;
   font-family: Outfit;
   font-weight: 400;
-  color: #D7D7D7;
+  color: #1F2732;
+}
+@media (max-width: 1250px) and (min-width: 877px) {
+  .welcome-to_peter-card-procent-text-years {
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 800px) {
+  .welcome-to_peter-card-procent-text-years {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 656px) {
+  .welcome-to_peter-card-procent-text-years {
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+.welcome-to_peter-card-procent-text-exp {
+  font-size: 1.375em;
+  line-height: 1.2em;
+  letter-spacing: 0.4px;
+  font-family: Outfit;
+  font-weight: 400;
+  color: #1F2732;
+}
+@media (max-width: 1250px) and (min-width: 877px) {
+  .welcome-to_peter-card-procent-text-exp {
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 800px) {
+  .welcome-to_peter-card-procent-text-exp {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 656px) {
+  .welcome-to_peter-card-procent-text-exp {
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
 }/*# sourceMappingURL=style.css.map */
