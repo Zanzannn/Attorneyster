@@ -729,9 +729,19 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 5em;
   }
 }
+@media (max-width: 500px) {
+  .welcome-to_peter-card-years {
+    max-height: 4em;
+  }
+}
 @media (max-width: 460px) {
   .welcome-to_peter-card-years {
     width: 42%;
+  }
+}
+@media (max-width: 400px) {
+  .welcome-to_peter-card-years {
+    width: 48%;
   }
 }
 .welcome-to_peter-card-years-pencil {

@@ -148,9 +148,21 @@
                     }
                 }
 
+                @media (max-width: 500px)  {
+                    & {
+                        max-height: 4em;
+                    }
+                }
+
                 @media (max-width: 460px)  {
                     & {
                         width: 42%;
+                    }
+                }
+
+                @media (max-width: 400px)  {
+                    & {
+                        width: 48%;
                     }
                 }
 
