@@ -758,6 +758,11 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 70%;
   }
 }
+@media (max-width: 450px) {
+  .welcome-to_peter-card-years-pencil-img {
+    max-width: 60%;
+  }
+}
 .welcome-to_peter-card-years-text {
   display: flex;
   flex-direction: column;
@@ -807,6 +812,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
   }
 }
+@media (max-width: 400px) {
+  .welcome-to_peter-card-years-text {
+    font-size: 0.7em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
 .welcome-to_peter-card-procent {
   width: 36.2%;
   height: 7.875em;
@@ -819,9 +833,19 @@ h1, h2, h3, h4, h5, h6 {
     max-height: 5em;
   }
 }
+@media (max-width: 500px) {
+  .welcome-to_peter-card-procent {
+    max-height: 4em;
+  }
+}
 @media (max-width: 460px) {
   .welcome-to_peter-card-procent {
     width: 42%;
+  }
+}
+@media (max-width: 400px) {
+  .welcome-to_peter-card-procent {
+    width: 48%;
   }
 }
 .welcome-to_peter-card-procent-windows {
