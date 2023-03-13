@@ -611,6 +611,7 @@ h1, h2, h3, h4, h5, h6 {
   .welcome-img {
     flex-direction: row;
     max-width: 96%;
+    gap: 2%;
   }
   .welcome-img-first {
     max-width: 50%;
@@ -639,6 +640,13 @@ h1, h2, h3, h4, h5, h6 {
   .welcome-to_peter h6 {
     padding-top: 0.25em;
     font-size: 2em;
+    line-height: 1.2em;
+  }
+}
+@media (max-width: 450px) {
+  .welcome-to_peter h6 {
+    padding-top: 0.25em;
+    font-size: 1.6em;
     line-height: 1.2em;
   }
 }
@@ -716,6 +724,16 @@ h1, h2, h3, h4, h5, h6 {
   flex-direction: row;
   gap: 6.7%;
 }
+@media (max-width: 700px) {
+  .welcome-to_peter-card-years {
+    max-height: 5em;
+  }
+}
+@media (max-width: 460px) {
+  .welcome-to_peter-card-years {
+    width: 42%;
+  }
+}
 .welcome-to_peter-card-years-pencil {
   width: 35%;
   display: flex;
@@ -770,12 +788,31 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
   }
 }
+@media (max-width: 550px) {
+  .welcome-to_peter-card-years-text {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
 .welcome-to_peter-card-procent {
   width: 36.2%;
   height: 7.875em;
   background: #D1B06B;
   display: flex;
   gap: 6.7%;
+}
+@media (max-width: 700px) {
+  .welcome-to_peter-card-procent {
+    max-height: 5em;
+  }
+}
+@media (max-width: 460px) {
+  .welcome-to_peter-card-procent {
+    width: 42%;
+  }
 }
 .welcome-to_peter-card-procent-windows {
   width: 35%;
@@ -825,6 +862,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
   }
 }
+@media (max-width: 550px) {
+  .welcome-to_peter-card-procent-windows-black {
+    font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
 .welcome-to_peter-card-procent-text {
   display: flex;
   flex-direction: column;
@@ -866,6 +912,15 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
   }
 }
+@media (max-width: 550px) {
+  .welcome-to_peter-card-procent-text-years {
+    font-size: 0.8em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
 .welcome-to_peter-card-procent-text-exp {
   font-size: 1.375em;
   line-height: 1.2em;
@@ -895,6 +950,15 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 656px) {
   .welcome-to_peter-card-procent-text-exp {
     font-size: 1em;
+    line-height: 1.2em;
+    letter-spacing: 0.4px;
+    font-family: Outfit;
+    font-weight: 400;
+  }
+}
+@media (max-width: 550px) {
+  .welcome-to_peter-card-procent-text-exp {
+    font-size: 0.8em;
     line-height: 1.2em;
     letter-spacing: 0.4px;
     font-family: Outfit;

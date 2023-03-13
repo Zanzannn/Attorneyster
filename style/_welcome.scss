@@ -20,6 +20,7 @@
             & {
                 flex-direction: row;
                 max-width: 96%;
+                gap: 2%;
 
                 &-first {
                     max-width: 50%;
@@ -55,6 +56,14 @@
                 & {
                     padding-top: 0.25em;
                     font-size: 2em;
+                    line-height: 1.2em; 
+                }
+            }
+
+            @media (max-width: 450px) {
+                & {
+                    padding-top: 0.25em;
+                    font-size: 1.6em;
                     line-height: 1.2em; 
                 }
             }
@@ -133,6 +142,18 @@
                 flex-direction: row;
                 gap: 6.7%;
 
+                @media (max-width: 700px)  {
+                    & {
+                        max-height: 5em;
+                    }
+                }
+
+                @media (max-width: 460px)  {
+                    & {
+                        width: 42%;
+                    }
+                }
+
                 &-pencil {
                     width: 35%;
                     display: flex;
@@ -177,6 +198,12 @@
                             @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
                         }
                     }
+
+                    @media (max-width: 550px)  {
+                        & {
+                            @include fontz (0.8em, 1.2em, 0.4px, Outfit, 400);
+                        }
+                    }
                 }
             }
 
@@ -186,6 +213,18 @@
                 background: #D1B06B;
                 display: flex;
                 gap: 6.7%;
+
+                @media (max-width: 700px)  {
+                    & {
+                        max-height: 5em;
+                    }
+                }
+
+                @media (max-width: 460px)  {
+                    & {
+                        width: 42%;
+                    }
+                }
 
                 &-windows {
                     width: 35%;
@@ -204,23 +243,29 @@
                     align-items: center;
                     justify-content: center;
 
-                    @media (max-width: 1250px)  and (min-width: 877px) {
-                        & {
-                            @include fontz (1.5em, 1.2em, 0.4px, Outfit, 400);
+                        @media (max-width: 1250px)  and (min-width: 877px) {
+                            & {
+                                @include fontz (1.5em, 1.2em, 0.4px, Outfit, 400);
+                            }
                         }
-                    }
 
-                    @media (max-width: 800px)  {
-                        & {
-                            @include fontz (1.7em, 1.2em, 0.4px, Outfit, 400);
+                        @media (max-width: 800px)  {
+                            & {
+                                @include fontz (1.7em, 1.2em, 0.4px, Outfit, 400);
+                            }
                         }
-                    }
 
-                    @media (max-width: 650px)  {
-                        & {
-                            @include fontz (1.3em, 1.2em, 0.4px, Outfit, 400);
+                        @media (max-width: 650px)  {
+                            & {
+                                @include fontz (1.3em, 1.2em, 0.4px, Outfit, 400);
+                            }
                         }
-                    }
+
+                        @media (max-width: 550px)  {
+                            & {
+                                @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
                     
                     }
                 }
@@ -252,6 +297,12 @@
                                 @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
                             }
                         }
+
+                        @media (max-width: 550px)  {
+                            & {
+                                @include fontz (0.8em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
                     }
                     
                     &-exp {
@@ -273,6 +324,12 @@
                         @media (max-width: 656px)  {
                             & {
                                 @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+
+                        @media (max-width: 550px)  {
+                            & {
+                                @include fontz (0.8em, 1.2em, 0.4px, Outfit, 400);
                             }
                         }
                     }
