@@ -96,6 +96,13 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 100%;
   background-repeat: none;
 }
+@media (max-width: 450px) {
+  .header {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url(img/Header/Room_bc.png);
+    background-size: 100%;
+    background-repeat: none;
+  }
+}
 .header-logo {
   width: 100%;
   padding-bottom: 0.2em;
@@ -407,15 +414,15 @@ h1, h2, h3, h4, h5, h6 {
     width: 70%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 650px) {
   .header-parker-text {
-    width: 75%;
+    width: 95%;
   }
 }
 .header-parker-text-img {
   max-width: 14.5%; /* 95px / 655 px */
 }
-@media (max-width: 870px) {
+@media (max-width: 650px) {
   .header-parker-text-img {
     display: none;
   }
@@ -477,25 +484,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.8em;
   }
 }
-@media (max-width: 615px) {
+@media (max-width: 6150px) {
   .header-parker-text-title-h6 {
+    width: 100%;
     font-size: 1.6em;
-  }
-}
-@media (max-width: 550px) {
-  .header-parker-text-title-h6 {
-    font-size: 1.4em;
-  }
-}
-@media (max-width: 480px) {
-  .header-parker-text-title-h6 {
-    width: 115%;
-    font-size: 1.2em;
-  }
-}
-@media (max-width: 410px) {
-  .header-parker-text-title-h6 {
-    font-size: 1em;
   }
 }
 .header-parker-text-title-paragraph {
@@ -581,9 +573,9 @@ h1, h2, h3, h4, h5, h6 {
     width: 30%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .header-parker-photo {
-    width: 23%;
+    display: none;
   }
 }
 .header-parker-photo img {

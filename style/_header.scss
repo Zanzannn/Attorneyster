@@ -5,6 +5,15 @@
     background-size: 100%;
     background-repeat: none;
 
+    @media (max-width: 450px) {
+        & { 
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)),
+            url(img/Header/Room_bc.png); 
+            background-size: 100%;
+            background-repeat: none;
+        }
+    }
+
     &-logo {
         width: 100%;
         padding-bottom: .2em; 
@@ -337,16 +346,16 @@
                 }
             }
 
-            @media (max-width: 400px) {
+            @media (max-width: 650px) {
                 & { 
-                    width: 75%;  
+                    width: 95%;  
                 }
             }
 
             &-img {
                 max-width: 14.5%; /* 95px / 655 px */
 
-                @media (max-width: 870px) {
+                @media (max-width: 650px) {
                     & { 
                        display: none;  
                     }
@@ -431,34 +440,19 @@
                     }
                 }
 
-                @media (max-width: 615px) {
+               
+
+                
+
+                @media (max-width: 6150px) {
                     & { 
+                        width: 100%;
                         font-size: 1.6em;  
     
                     }
                 }
 
-                @media (max-width: 550px) {
-                    & { 
-                        font-size: 1.4em;  
-    
-                    }
-                }
-
-                @media (max-width: 480px) {
-                    & { 
-                        width: 115%;
-                        font-size: 1.2em;  
-    
-                    }
-                }
-
-                @media (max-width: 410px) {
-                    & { 
-                        font-size: 1em;  
-    
-                    }
-                }
+                
             }
 
             &-paragraph {
@@ -557,9 +551,9 @@
                 }
             }
 
-            @media (max-width: 400px) {
+            @media (max-width: 450px) {
                 & { 
-                    width: 23%; 
+                    display: none; 
                 }
             }
 
