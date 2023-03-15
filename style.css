@@ -990,4 +990,32 @@ h1, h2, h3, h4, h5, h6 {
     font-family: Outfit;
     font-weight: 400;
   }
+}
+
+.group {
+  max-width: 100%;
+  padding: 5em 2.77% 5em 2.77%; /* 40px / 1440px */
+  background-color: #161D27;
+  display: flex;
+}
+.group-explorer {
+  display: flex;
+}
+.group-explorer-title {
+  font-size: 2.8125em;
+  line-height: 1.1em;
+}
+.group-explorer-img {
+  padding-top: 0.6875em;
+  padding-bottom: 2.6875em;
+  max-width: 14.5%;
+}
+.group-explorer-text {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  letter-spacing: 0.4px;
+  font-family: Outfit;
+  font-weight: 400;
+  color: #D7D7D7;
+  text-align: justify;
 }/*# sourceMappingURL=style.css.map */
