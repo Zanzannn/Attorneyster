@@ -1,0 +1,382 @@
+.welcome {
+    max-width: 100%;
+    padding: 5em  2.77% 5em 2.77%;  /* 40px / 1440px */
+    background-color: #161D27;
+    display: flex;
+
+    @media (max-width: 878px) {
+        & { 
+            flex-direction: column;  
+        }
+    }
+
+    &-img { 
+        max-width: 34.34%; /* 467px / 1360px */
+        display: flex;
+        flex-direction: column;
+        gap: 1.875em;
+
+        @media (max-width: 878px) {
+            & {
+                flex-direction: row;
+                max-width: 96%;
+                gap: 2%;
+
+                &-first {
+                    max-width: 50%;
+                }
+
+                &-andre {
+                    max-width: 50%;
+                }
+                
+            }    
+        }
+    }
+
+    &-to_peter {
+        max-width: 65.66%;
+        padding-left: 4.56%; /* 62px / 1360px */
+        display: flex;
+        flex-direction: column;
+
+        @media (max-width: 878px) {
+            & {
+                max-width: 100%;
+                padding-left: 0%;
+                
+            }
+        }
+
+        h6 {
+            font-size: 2.8125em;
+            line-height: 1.1em;
+
+            @media (max-width: 600px) {
+                & {
+                    padding-top: 0.25em;
+                    font-size: 2em;
+                    line-height: 1.2em; 
+                }
+            }
+
+            @media (max-width: 450px) {
+                & {
+                    padding-top: 0.25em;
+                    font-size: 1.6em;
+                    line-height: 1.2em; 
+                }
+            }
+        }
+
+        &-img {
+            padding-top: 0.6875em;
+            padding-bottom: 2.6875em;
+            max-width: 14.5%; /* 95px / 655 px */
+
+            @media (max-width: 600px) {
+                & {
+                    padding-bottom: 1.6875em;
+                }
+            }
+
+            @media (max-width: 375px) {
+                & {
+                    padding-bottom: 0.6875em;
+                }
+            }
+        }
+
+        &-text {
+            
+            @include fontz (1.25em, 1.4em, 0.4px, Outfit, 400);
+            color: #D7D7D7; 
+            text-align: justify;
+
+            @media (max-width: 600px) {
+                & {
+                    @include fontz (1.125em, 1.2em, 0.4px, Outfit, 400);
+                }
+            }
+
+            @media (max-width: 375px) {
+                & {
+                    @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
+                }
+            }
+        }
+
+        &-parker {
+            padding-top: 2em;
+            padding-bottom: 2.8125em;
+            display: flex;
+            flex-direction: row;
+            gap: 2.4%;
+
+            &-img {
+                max-width: 100%;
+                max-height: 100%;
+                padding-top: 0;
+                padding-bottom: 0;
+
+            }
+
+            &-h6 {
+                display: flex;
+                align-items: center;
+                font-size: 2.8125em;
+                line-height: 1.1em;
+            }
+        }
+        
+        &-card {
+            max-width: 100%;
+            display: flex;
+            gap: 3.4%;
+
+            &-years {
+                width: 36.2%;
+                height: 7.875em;
+                background: #3B434E;
+                display: flex;
+                flex-direction: row;
+                gap: 6.7%;
+
+                @media (max-width: 700px)  {
+                    & {
+                        max-height: 5em;
+                    }
+                }
+
+                @media (max-width: 500px)  {
+                    & {
+                        max-height: 4em;
+                    }
+                }
+
+                @media (max-width: 460px)  {
+                    & {
+                        width: 42%;
+                    }
+                }
+
+                @media (max-width: 400px)  {
+                    & {
+                        width: 48%;
+                    }
+                }
+
+                &-pencil {
+                    width: 35%;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+
+                    &-img {
+                        max-width: 95%;
+
+                        @media (max-width: 650px)  {
+                            & {
+                                max-width: 70%;
+                            }
+                        }
+
+                        @media (max-width: 450px)  {
+                            & {
+                                max-width: 60%;
+                            }
+                        }
+
+                    }
+                }
+
+                &-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    @include fontz (1.375em, 1.4em, 0.4px, Outfit, 400);
+                    color: #D7D7D7;
+                    align-content: center;
+
+                    @media (max-width: 1250px)  and (min-width: 877px) {
+                        & {
+                            @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
+                        }
+                    }
+
+                    @media (max-width: 800px)  {
+                        & {
+                            @include fontz (1.2em, 1.2em, 0.4px, Outfit, 400);
+                        }
+                    }
+
+                    @media (max-width: 656px)  {
+                        & {
+                            @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
+                        }
+                    }
+
+                    @media (max-width: 550px)  {
+                        & {
+                            @include fontz (0.8em, 1.2em, 0.4px, Outfit, 400);
+                        }
+                    }
+
+                    @media (max-width: 400px)  {
+                        & {
+                            @include fontz (0.7em, 1.2em, 0.4px, Outfit, 400);
+                        }
+                    }
+                }
+            }
+
+             &-procent {
+                width: 36.2%;
+                height: 7.875em;
+                background: #D1B06B;
+                display: flex;
+                gap: 6.7%;
+
+                @media (max-width: 700px)  {
+                    & {
+                        max-height: 5em;
+                    }
+                }
+
+                @media (max-width: 500px)  {
+                    & {
+                        max-height: 4em;
+                    }
+                }
+
+                @media (max-width: 460px)  {
+                    & {
+                        width: 42%;
+                    }
+                }
+
+                @media (max-width: 400px)  {
+                    & {
+                        width: 48%;
+                    }
+                }
+
+                &-windows {
+                    width: 35%;
+                    display: flex;
+                    justify-content: end;
+                    align-items: center;
+
+                    &-black {
+                    width: 68%;
+                    height: 47%;
+                    background: #161D27;
+                    border-radius: 5px;
+                    @include fontz (1.875em, 1.6em, 0.4px, Outfit, 400);
+                    color: #FFFFFF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                        @media (max-width: 1250px)  and (min-width: 877px) {
+                            & {
+                                @include fontz (1.5em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+
+                        @media (max-width: 800px)  {
+                            & {
+                                @include fontz (1.7em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+
+                        @media (max-width: 650px)  {
+                            & {
+                                @include fontz (1.3em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+
+                        @media (max-width: 550px)  {
+                            & {
+                                @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+                    
+                    }
+                }
+
+                &-text {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+
+                    &-years {
+                        @include fontz (1.375em, 1.2em, 0.4px, Outfit, 400);
+                        color: #1F2732;
+
+                        @media (max-width: 1250px) and (min-width: 877px) {
+                            & {
+                                @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+
+                        @media (max-width: 800px)  {
+                            & {
+                                @include fontz (1.2em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+
+                        @media (max-width: 656px)  {
+                            & {
+                                @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+
+                        @media (max-width: 550px)  {
+                            & {
+                                @include fontz (0.8em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+                    }
+                    
+                    &-exp {
+                        @include fontz (1.375em, 1.2em, 0.4px, Outfit, 400);
+                    color: #1F2732;
+
+                        @media (max-width: 1250px) and (min-width: 877px) {
+                            & {
+                                @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+
+                        @media (max-width: 800px)  {
+                            & {
+                                @include fontz (1.2em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+
+                        @media (max-width: 656px)  {
+                            & {
+                                @include fontz (1em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+
+                        @media (max-width: 550px)  {
+                            & {
+                                @include fontz (0.8em, 1.2em, 0.4px, Outfit, 400);
+                            }
+                        }
+                    }
+
+                    
+                }
+            
+
+            }
+            
+        }
+
+    }
+}

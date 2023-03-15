@@ -1,0 +1,32 @@
+.group {
+    max-width: 100%;
+    padding: 5em  2.77% 5em 2.77%;  /* 40px / 1440px */
+    background-color: #161D27;
+    display: flex;
+
+    &-explorer {
+        display: flex;
+
+        &-title {
+            font-size: 2.8125em;
+            line-height: 1.1em;
+        }
+
+
+        &-img {
+            padding-top: 0.6875em;
+            padding-bottom: 2.6875em;
+            max-width: 14.5%;
+        }
+
+        &-text {
+            @include fontz (1.25em, 1.4em, 0.4px, Outfit, 400);
+            color: #D7D7D7; 
+            text-align: justify;
+        }
+
+
+    }
+
+
+}
